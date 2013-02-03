@@ -1,0 +1,12 @@
+	
+	<jsp:useBean id="calculation" scope="session" class="com.k1x.j2ee.webiface.persistance.Calculations"/>
+	
+	
+	ID: <%= calculation.getId() %> 	</br> 
+	Name: <%= calculation.getName() %> 	</br>
+	Uid: <%= calculation.getUid() %> 	</br>
+	N: <%= calculation.getN() %> 	</br>
+	K: <%= calculation.getId() %> 	</br>	
+	Complete: <%= calculation.getComplete() %> 	</br>
+	Data: </br> 
+	<%= calculation.getData() %> 	

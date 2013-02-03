@@ -1,0 +1,13 @@
+#content{
+outline: 1px #096 solid;
+margin:0 170px 10px 170px;
+height:500px;
+width: 630px;   
+}
+ 
+#right_sidebar{
+outline: 1px #096 solid;
+float:right;
+height:500px;
+width: 160px;
+}

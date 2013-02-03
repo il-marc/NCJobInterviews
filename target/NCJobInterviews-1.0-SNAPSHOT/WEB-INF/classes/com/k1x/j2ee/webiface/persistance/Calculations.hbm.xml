@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="com.k1x.j2ee.webiface.persistance.Calculations" table="calculations">
+    <id column="id" name="id" type="java.lang.Integer">
+      <generator class="identity"/>
+    </id>
+    <property column="complete" name="complete" type="java.lang.Integer"/>
+    <property column="uid" name="uid" type="java.lang.Integer"/>  
+    <property column="name" name="name" type="string"/>
+    <property column="data" name="data" type="string"/>
+    <property column="n" name="n" type="java.lang.Integer"/>  
+    <property column="k" name="k" type="java.lang.Integer"/>      
+    </class>
+</hibernate-mapping>

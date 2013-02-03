@@ -1,0 +1,51 @@
+   <%@ page import="com.k1x.j2ee.webiface.sessionutil.SessionData" %>
+   <%@ page import="com.k1x.j2ee.webiface.persistance.Users" %>
+   <%@ page import="java.util.List" %>
+   <%@ page import="com.k1x.j2ee.webiface.persistance.Calculations" %>
+   
+
+
+	<%
+     if(auth)
+     {
+    	 
+		switch(sessionData.getMode())
+		{
+		case SessionData.ADD_CALCULATION:
+		{
+	%>
+		<%@include file="/WEB-INF/add_calculation.jspf"%>
+	
+	<%
+			break;
+		}
+		case SessionData.CALCULATIONS_LIST:
+		{
+	%>
+		<%@include file="/WEB-INF/calculations.jspf"%>
+		
+	
+	<%
+			break;
+		}
+		case SessionData.VIEW_CALCULATION:
+		{
+	%>
+		<%@include file="/WEB-INF/view_calculation.jspf"%>
+	
+	<%
+		}
+		case SessionData.REGISTER:
+		{
+	%>
+	<%
+			break;
+		}
+		
+		}
+    %>
+    
+
+    <%
+     }
+    %>
